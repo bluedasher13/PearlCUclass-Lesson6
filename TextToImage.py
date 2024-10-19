@@ -5,7 +5,7 @@ pipeline = DiffusionPipeline.from_pretrained(
     "runwayml/stable-diffusion-v1-5", use_safetensors=True
 )
 
-prompt = "cinematic photo of Godzilla eating sushi with a cat in a izakaya."
+prompt = "王者基多拉與狗在足球場"
 generator = torch.Generator(device="cpu").manual_seed(37)
 image = pipeline(
     prompt,
